@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Local editor and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+temp/
+
+# Large local data and generated analysis outputs
+genomes/
+*.fa
+*.fasta
+*.h5ad
+*.h5
+*.hdf5
+*.rds
+*.rda
+*.pkl
+*.pickle
+*.feather
+*.loom
+*.mtx
+*.npy
+*.npz
+*.bed
+*.bim
+*.fam
+*.l2.ldscore.gz
+
+# PBG outputs
+pbg/
+graph*/
+model*/
+checkpoint*/
+
+# External tool resources
+MAGMA/
+STCase-main/
+gsMap-main/
+gsMap_Reproduction*/
