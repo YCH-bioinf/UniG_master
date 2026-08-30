@@ -51,6 +51,10 @@ genomes/
 *.fam
 *.l2.ldscore.gz
 
+# Small built-in gene annotation tables kept in GitHub.
+!src/gene_anno/
+!src/gene_anno/*.bed
+
 # PBG outputs
 pbg/
 graph*/

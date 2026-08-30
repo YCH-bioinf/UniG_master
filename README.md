@@ -18,6 +18,7 @@ UniG_master/
 │       ├── scmore.py           # scMORE/MAGMA helpers
 │       └── comm.py             # Cell-cell communication analysis
 ├── docs/                       # Analysis notebooks
+├── src/gene_anno/              # Small gene annotation BED tables tracked in GitHub
 ├── genomes/                    # Local genome FASTA files, not for GitHub upload
 └── setup.py
 ```
@@ -62,6 +63,28 @@ The `docs/` directory contains analysis notebooks for:
 - cell-cell communication
 
 ## Data
+
+Small gene annotation tables are tracked directly in this GitHub repository
+under `src/gene_anno/`.
+
+Large reference files and tutorial input datasets are not stored in GitHub.
+They are deposited on Zenodo:
+
+- Zenodo DOI: TODO
+- Zenodo download page: TODO
+
+The Zenodo dataset is intended to include:
+
+- `genomes/`: local `hg38` and `mm10` FASTA references and indexes used by
+  preprocessing and GRN tutorials.
+- Tutorial input datasets referenced by the notebooks in `docs/`, including
+  the mouse embryonic brain, ISSAAC, human heart, GBM, MAGMA/gsMap reference,
+  and GWAS summary-statistic inputs needed to reproduce the workflows.
+
+See `docs/tutorial_data_manifest.tsv` for the file-level upload manifest.
+
+After downloading the Zenodo files, place or symlink them to the paths expected
+by the tutorials, or update the path variables at the top of each notebook.
 
 ## Support
 If you have any questions, please feel free to contact us zhanglh@whu.edu.cn.
