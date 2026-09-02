@@ -14,7 +14,6 @@ _MODULE_ALIASES = {
     "grn": "tasks.grn",
     "trait": "tasks.trait",
     "comm": "tasks.comm",
-    "scmore": "tasks.scmore",
 }
 
 _FUNCTION_ALIASES = {
@@ -32,7 +31,6 @@ __all__ = [
     "grn",
     "trait",
     "comm",
-    "scmore",
     "gen_graph",
     "run_training_stages",
 ]

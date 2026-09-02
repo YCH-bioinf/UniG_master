@@ -1,4 +1,4 @@
-"""Lift peak coordinates from hg38 to hg19 for CRE / scMORE / gsMap pipelines."""
+"""Lift peak coordinates from hg38 to hg19 for CRE, trait, and gsMap pipelines."""
 
 from __future__ import annotations
 
@@ -134,7 +134,7 @@ def load_peak_lift_mapping(mapping_path: str | Path) -> dict[str, str]:
 
 
 def lift_peak_colon_to_regions(peak_hg19_colon: str) -> str:
-    """chr15:74375198-74375698 (hg19) -> chr15-74375198-74375698 for scMORE Regions."""
+    """chr15:74375198-74375698 (hg19) -> chr15-74375198-74375698."""
     peak = str(peak_hg19_colon).strip()
     if peak.startswith("chr"):
         chrom, rest = peak.split(":", 1)

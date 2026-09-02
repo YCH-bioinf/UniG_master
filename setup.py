@@ -59,9 +59,6 @@ grn_requires = [
 trait_requires = [
     "gsMap",
     "pyarrow>=10.0",
-]
-
-scmore_requires = [
     "pyliftover>=0.4",
 ]
 
@@ -81,7 +78,7 @@ def unique_requires(*groups):
 
 
 base_requires = unique_requires(core_requires, pbg_requires, preprocess_requires)
-trait_workflow_requires = unique_requires(trait_requires, scmore_requires)
+trait_workflow_requires = trait_requires
 
 extras_require = {
     "mapping": mapping_requires,
@@ -99,7 +96,6 @@ extras_require = {
     "basic": [],
     "pbg": [],
     "preprocess": [],
-    "scmore": scmore_requires,
     "utils": utils_requires,
 }
 
